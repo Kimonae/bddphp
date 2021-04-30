@@ -26,7 +26,7 @@
 //accès database
 $serveur="localhost";
 $login="root";
-$pass="dada";
+$pass="";
 $db_name="ampoules";
 
 //database
