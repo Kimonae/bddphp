@@ -102,15 +102,17 @@ body {
       }
 
     input[type=submit] {
-      background-color: #1255a2;
-      color: white;
       width: 90%;
       padding: 6px 8px;
       border: none;
-      border-radius: 18px;
       margin-left: -1px;
     }
 
 
     }
   }
+
+  input[type=submit] {
+    background-color: #1255a2;
+    color: white;
+    border-radius: 28px;
