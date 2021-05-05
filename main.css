@@ -1,0 +1,116 @@
+body {
+    background-color:#402D28;
+  }
+
+  .Centrer {
+
+   margin-left: 520px;
+
+  }
+  .texte {
+
+
+  color: white;
+     
+  }
+
+
+  .formu{
+   
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 580px;
+
+
+  }
+
+  .texte {
+
+    margin-left: 520px;
+    color:white;
+ 
+   }
+
+   @media screen and (max-width: 750px) {
+    .texte {
+      width: 30%;
+      height: 10%;
+      position: absolute;
+      margin-left: 350px;
+      margin-top: 175px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .textee {
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      margin-left: 120px;
+      margin-top: -10px;
+    }
+  }
+
+
+   @media screen and (max-width: 750px) {
+    .resp {
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      margin-left: 0px;
+      margin-top: 150px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 700px) {
+    .formu {
+      position: absolute;
+      left: -241px;
+      margin-top: -90px;
+
+    }
+  }
+
+
+    
+   @media screen and (max-width: 700px) {
+    input[type=text], textarea {
+      width: 110%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 28px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-left: -1px;
+      resize: vertical;
+      size: 8px;
+    }
+
+    @media screen and (max-width: 700px) {
+      input[type=date], textarea {
+        width: 90%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 18px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-left: 5px;
+        resize: vertical;
+      }
+
+    input[type=submit] {
+      background-color: #1255a2;
+      color: white;
+      width: 90%;
+      padding: 6px 8px;
+      border: none;
+      border-radius: 18px;
+      margin-left: -1px;
+    }
+
+
+    }
+  }
