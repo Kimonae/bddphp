@@ -1,5 +1,6 @@
 body {
-    background-color:#402D28;
+    background-color: #402D28;
+    
   }
 
   .Centrer {
@@ -66,6 +67,60 @@ body {
     }
   }
 
+
+
+  @media screen and (max-width: 700px) {
+    .formu {
+      position: absolute;
+      left: -241px;
+      margin-top: -90px;
+
+    }
+  }
+
+
+    
+   @media screen and (max-width: 700px) {
+    input[type=text], textarea {
+      width: 110%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 28px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-left: -1px;
+      resize: vertical;
+      size: 8px;
+    }
+
+    @media screen and (max-width: 700px) {
+      input[type=date], textarea {
+        width: 90%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 18px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-left: 5px;
+        resize: vertical;
+      }
+
+    input[type=submit] {
+      width: 90%;
+      padding: 6px 8px;
+      border: none;
+      margin-left: -1px;
+    }
+
+
+    }
+  }
+
+  input[type=submit] {
+    background-color: #1255a2;
+    color: white;
+    border-radius: 28px;
+  }
 
 
   @media screen and (max-width: 700px) {
