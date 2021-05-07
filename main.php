@@ -28,7 +28,7 @@
 //accès database
 $serveur="localhost";
 $login="root";
-$pass="";
+$pass="dada";
 $db_name="ampoules";
 
 
@@ -121,14 +121,17 @@ if(isset($_POST['Bouton']) && isset($_POST['id']) && isset($_POST['lieux']) && i
 
             </form>
 
+
 <?php
 echo "<h1>AFFICHAGE</h1><hr><br>";
 ///////////////////////////////////////AFFICHAGE !
      $connexion = new PDO("mysql:host=$serveur;dbname=$db_name",$login,$pass);
      $connexion -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
      //echo 'Connexion à la base de données réussi';
+
      $statement = "SELECT * FROM ampoules";
      $h = $connexion->query($statement);
+     echo" <center>";
      echo "<table> <tr><th>ID</th><th>Etage</th><th>Lieux</th><th>Prix</th><th>Date</th></tr>";
      while($t = $h->fetch()){
          echo "<form action='main.php' method='POST'>";
@@ -143,6 +146,7 @@ echo "<h1>AFFICHAGE</h1><hr><br>";
          echo "<td><input type='submit' name='Bouton' value='Modifier'/></td>";
          echo "<td><input type='submit' name='Bouton' value='Supprimer'/></td>";
          echo "</tr></form>";
+         echo "</center>";
      }
 
 echo "</table><br>";
